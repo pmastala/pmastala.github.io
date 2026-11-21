@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,16 +10,10 @@
 
 <title>Publications – Precious Innocent Mastala</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,16 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./images/logo.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-94d4e57d268e94d2055dd178b24a1771.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a7f47720f7d3df2739752574eb6b96ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,6 +55,7 @@ ul.task-list li input[type="checkbox"] {
     "/",
     "s"
   ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -79,20 +73,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
+    const listingTargetEl = window.document.querySelector('#listing-published .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-authors','listing-journal','listing-year','listing-doi','listing-open-access','listing-status','listing-categories','listing-volume','listing-article','listing-note',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-authors','listing-journal','listing-year','listing-doi','listing-open-access','listing-volume','listing-article','listing-cover',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-authors","listing-journal","listing-year"],
+      searchColumns: ["listing-title","listing-authors","listing-journal","listing-year","listing-doi","listing-open-access","listing-volume","listing-article","listing-cover"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
+    window['quarto-listings']['listing-published'] = new List('listing-published', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-review .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-authors','listing-journal','listing-year','listing-status',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-authors","listing-journal","listing-year","listing-status"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-review'] = new List('listing-review', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -105,10 +127,9 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -121,7 +142,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -140,31 +161,25 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Publications – Precious Innocent Mastala">
 <meta property="og:description" content="Peer-reviewed publications by Precious Innocent Mastala.">
-<meta property="og:image" content="https://pmastala.github.io/images/social-card.png">
+<meta property="og:image" content="https://mdpi-res.com/data/covers/antibiotics/cover-antibiotics-v15-i10.png">
 <meta property="og:site_name" content="Precious Innocent Mastala">
-<meta property="og:image:height" content="630">
-<meta property="og:image:width" content="1200">
+<meta property="og:image:alt" content="">
 <meta name="twitter:title" content="Publications – Precious Innocent Mastala">
 <meta name="twitter:description" content="Peer-reviewed publications by Precious Innocent Mastala.">
-<meta name="twitter:image" content="https://pmastala.github.io/images/social-card.png">
-<meta name="twitter:image-height" content="630">
-<meta name="twitter:image-width" content="1200">
+<meta name="twitter:image" content="https://mdpi-res.com/data/covers/antibiotics/cover-antibiotics-v15-i10.png">
+<meta name="twitter:image:alt" content="">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.svg" alt="Network logo for Precious Innocent Mastala" class="navbar-logo light-content">
-    <img src="./images/logo.svg" alt="Network logo for Precious Innocent Mastala" class="navbar-logo dark-content">
-    </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">P. I. Mastala</span>
+    <span class="navbar-title">Precious Innocent Mastala</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -174,7 +189,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -186,16 +201,8 @@ window.Quarto = {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./journey.html"> 
-<span class="menu-text">Journey</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./updates.html"> 
-<span class="menu-text">Updates</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
-<span class="menu-text">Contact</span></a>
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -210,7 +217,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Publications</h1></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Publications</h1></header>
 
 <header id="title-block-header">
 
@@ -218,396 +225,408 @@ window.Quarto = {
 </header>
 
 
-<div class="pm-pagehead column-screen">
-<section id="publications" class="level1 unnumbered unlisted pm-wrap">
-<h1 class="unnumbered unlisted">Publications</h1>
-<p>Peer-reviewed work, newest first. Use the search box or the topic list to filter. A complete and current record is on <a href="https://orcid.org/0000-0001-9135-4856">ORCID</a> and <a href="https://scholar.google.com/citations?user=xGpXw3gAAAAJ&amp;hl=en">Google Scholar</a>.</p>
-</section>
-</div>
-<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
+<p><span class="pm-page-lede" style="display:block">Newest first. Full records are on <a href="https://scholar.google.com/citations?user=xGpXw3gAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://orcid.org/0000-0001-9135-4856">ORCID</a>.</span></p>
+<section id="peer-reviewed" class="level2 unnumbered unlisted">
+<h2 class="unnumbered unlisted anchored" data-anchor-id="peer-reviewed">Peer-reviewed</h2>
+<div id="listing-published" class="quarto-listing quarto-listing-container-custom">
 <!--
-Publication list, driven by data/publications.yml.
-Fields per entry: title, authors, journal, year, volume, article,
-doi, url, open-access (true/false), status, note.
+Publication list with automatic cover thumbnails.
+Covers come from the DOI for BMC/Springer (10.1186/sXXXXX, 10.1007/sXXXXX)
+and MDPI (10.3390/journalVVIIAAAA) journals, or from an explicit "cover" field.
+If a cover cannot load, a navy tile with the journal name is shown instead.
 -->
 <div class="list">
-<div class="pm-pub" data-index="0" data-categories="UmFiaWVzJTJDU3VydmVpbGxhbmNl">
-<div class="pm-pub-year listing-year">
-2026
-</div>
+<div class="pm-pub" data-index="0">
+<a class="pm-thumb" href="https://doi.org/10.1186/s12889-026-30160-y" aria-hidden="true" tabindex="-1"> <img src="https://media.springernature.com/w300/springer-static/cover-hires/journal/12889" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"> <span class="pm-tile"><span>BMC Public Health</span><b>2026</b></span> </a>
 <div class="pm-pub-body">
 <h3 class="listing-title anchored">
 <a href="https://doi.org/10.1186/s12889-026-30160-y">Where are rabies cases lost along the surveillance pathway? A comparative evaluation of participatory and passive rabies surveillance in urban Lilongwe, Malawi</a>
 </h3>
-<p class="pm-pub-authors listing-authors">
+<p class="pm-authors">
 <strong>Mastala PI</strong>, Kalonde PK, Chiweta E, Razemba T, Nyamwanza M, Chimbalanga G, Phiri KM, Lambulira D, Dzimbiri P, Kamanga L, Msowoya M, Tefera M, Kapalamula TF
 </p>
-<p class="pm-pub-venue listing-journal">
-<em>BMC Public Health</em>
+<p class="pm-venue">
+<em>BMC Public Health</em> (2026)
 </p>
-<div class="pm-pub-links">
-<p><span class="pm-badge status">Online first</span> <span class="pm-badge oa">Open access</span> <a href="https://doi.org/10.1186/s12889-026-30160-y">doi:10.1186/s12889-026-30160-y</a></p>
+<div class="pm-links">
+<p><span class="pm-badge">Open access</span> <a href="https://doi.org/10.1186/s12889-026-30160-y">doi:10.1186/s12889-026-30160-y</a></p>
 </div>
 </div>
 </div>
-<div class="pm-pub" data-index="1" data-categories="QW50aW1pY3JvYmlhbCUyMHJlc2lzdGFuY2U=">
-<div class="pm-pub-year listing-year">
-2026
-</div>
+<div class="pm-pub" data-index="1">
+<a class="pm-thumb" href="https://doi.org/10.3390/antibiotics15101028" aria-hidden="true" tabindex="-1"> <img src="https://mdpi-res.com/data/covers/antibiotics/cover-antibiotics-v15-i10.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"> <span class="pm-tile"><span>Antibiotics</span><b>2026</b></span> </a>
 <div class="pm-pub-body">
 <h3 class="listing-title anchored">
 <a href="https://doi.org/10.3390/antibiotics15101028">Phenotypic Antimicrobial Resistance Patterns in E. coli, Salmonella, and Enterobacter Species Isolated from Broiler Chicken Meat in Mzimba, Malawi: Insights from the Multiple Antibiotic Resistance Index</a>
 </h3>
-<p class="pm-pub-authors listing-authors">
-Chipembo AC, Kalumbi MH, Kamara A, Koroma NF, Iragena ML, Chikosa K, Maimu M, Zulu GE, <strong>Mastala PI</strong>, [remaining authors], Bila NM
+<p class="pm-authors">
+Chipembo AC, Kalumbi MH, Kamara A, Koroma NF, Iragena ML, Chikosa K, Maimu M, Zulu GE, <strong>Mastala PI</strong>, Mvula S, Malinki T, Msiska R, Pondja A, Musaya J, Moiane B, Bila NM
 </p>
-<p class="pm-pub-venue listing-journal">
-<em>Antibiotics</em>, 15(10): 1028
+<p class="pm-venue">
+<em>Antibiotics</em> 15(10): 1028 (2026)
 </p>
-<div class="pm-pub-links">
-<p><span class="pm-badge status">Published</span> <span class="pm-badge oa">Open access</span> <a href="https://doi.org/10.3390/antibiotics15101028">doi:10.3390/antibiotics15101028</a></p>
-</div>
-<p class="pm-pub-note">
-Complete the author list from the journal page.
-</p>
+<div class="pm-links">
+<p><span class="pm-badge">Open access</span> <a href="https://doi.org/10.3390/antibiotics15101028">doi:10.3390/antibiotics15101028</a></p>
 </div>
 </div>
-<div class="pm-pub" data-index="2" data-categories="QW50aW1pY3JvYmlhbCUyMHJlc2lzdGFuY2U=">
-<div class="pm-pub-year listing-year">
-2026
 </div>
+<div class="pm-pub" data-index="2">
+<a class="pm-thumb" href="https://doi.org/10.3389/fvets.2026.1886903" aria-hidden="true" tabindex="-1"> <img src="https://d2csxpduxe849s.cloudfront.net/media/E32629C6-9347-4F84-81FEAEF7BFA342B3/72F1DABB-FDF2-445B-A224B93D812926F9/F0B31557-8D28-4052-957B14963A316F59/WebsiteWebP_XL-FVETS_Main%20Visual_Green_Website.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"> <span class="pm-tile"><span>Frontiers in Veterinary Science</span><b>2026</b></span> </a>
 <div class="pm-pub-body">
 <h3 class="listing-title anchored">
 <a href="https://doi.org/10.3389/fvets.2026.1886903">Prevalence of ESBL-associated resistance genes and antimicrobial resistance in Escherichia coli from pigs and cattle slaughtered at urban abattoirs in Lilongwe District, Malawi</a>
 </h3>
-<p class="pm-pub-authors listing-authors">
+<p class="pm-authors">
 Nkhoma C, Chikwana N, <strong>Mastala PI</strong>, Kapalamula T
 </p>
-<p class="pm-pub-venue listing-journal">
-<em>Frontiers in Veterinary Science</em>, 13: 1886903
+<p class="pm-venue">
+<em>Frontiers in Veterinary Science</em> 13: 1886903 (2026)
 </p>
-<div class="pm-pub-links">
-<p><span class="pm-badge status">Published</span> <span class="pm-badge oa">Open access</span> <a href="https://doi.org/10.3389/fvets.2026.1886903">doi:10.3389/fvets.2026.1886903</a></p>
+<div class="pm-links">
+<p><span class="pm-badge">Open access</span> <a href="https://doi.org/10.3389/fvets.2026.1886903">doi:10.3389/fvets.2026.1886903</a></p>
 </div>
 </div>
 </div>
-<div class="pm-pub" data-index="3" data-categories="T25lJTIwSGVhbHRoJTJDU3VydmVpbGxhbmNl">
-<div class="pm-pub-year listing-year">
-2026
-</div>
+<div class="pm-pub" data-index="3">
+<a class="pm-thumb" href="https://doi.org/10.1186/s42522-026-00237-0" aria-hidden="true" tabindex="-1"> <img src="https://media.springernature.com/w300/springer-static/cover-hires/journal/42522" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"> <span class="pm-tile"><span>One Health Outlook</span><b>2026</b></span> </a>
 <div class="pm-pub-body">
 <h3 class="listing-title anchored">
 <a href="https://doi.org/10.1186/s42522-026-00237-0">Does plastic waste present an infection hazard? Current evidence, surveillance challenges and research priorities</a>
 </h3>
-<p class="pm-pub-authors listing-authors">
+<p class="pm-authors">
 Kalonde PK, Mkoola K, Ormsby M, Mwapasa T, <strong>Mastala PI</strong>, Mphasa M, Tonthola K, Bickton FM, Nambala P, Robertson T, Quilliam RS, Chidziwisano K, Morse T, Jones CM, Stanton MC, Atkinson PM, Henrion MYR, Feasey N
 </p>
-<p class="pm-pub-venue listing-journal">
-<em>One Health Outlook</em>, 8: 41
+<p class="pm-venue">
+<em>One Health Outlook</em> 8: 41 (2026)
 </p>
-<div class="pm-pub-links">
-<p><span class="pm-badge status">Published</span> <span class="pm-badge oa">Open access</span> <a href="https://doi.org/10.1186/s42522-026-00237-0">doi:10.1186/s42522-026-00237-0</a></p>
+<div class="pm-links">
+<p><span class="pm-badge">Open access</span> <a href="https://doi.org/10.1186/s42522-026-00237-0">doi:10.1186/s42522-026-00237-0</a></p>
 </div>
 </div>
 </div>
-<div class="pm-pub" data-index="4" data-categories="QW50aW1pY3JvYmlhbCUyMHJlc2lzdGFuY2U=">
-<div class="pm-pub-year listing-year">
-2026
-</div>
+<div class="pm-pub" data-index="4">
+<a class="pm-thumb" href="https://doi.org/10.3390/antibiotics15030239" aria-hidden="true" tabindex="-1"> <img src="https://mdpi-res.com/data/covers/antibiotics/cover-antibiotics-v15-i3.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"> <span class="pm-tile"><span>Antibiotics</span><b>2026</b></span> </a>
 <div class="pm-pub-body">
 <h3 class="listing-title anchored">
 <a href="https://doi.org/10.3390/antibiotics15030239">Antimicrobial Use and Resistance: Knowledge, Attitudes, and Practices of Broiler Farmers in Mzimba, Malawi</a>
 </h3>
-<p class="pm-pub-authors listing-authors">
+<p class="pm-authors">
 Chipembo AC, Zulu GE, <strong>Mastala PI</strong>, Mvula S, Malinki TSG, Friday W, Kalumbi M, Pondja A, Musaya J, Moiane B, Bila NM
 </p>
-<p class="pm-pub-venue listing-journal">
-<em>Antibiotics</em>, 15(3): 239
+<p class="pm-venue">
+<em>Antibiotics</em> 15(3): 239 (2026)
 </p>
-<div class="pm-pub-links">
-<p><span class="pm-badge status">Published</span> <span class="pm-badge oa">Open access</span> <a href="https://doi.org/10.3390/antibiotics15030239">doi:10.3390/antibiotics15030239</a></p>
-</div>
-<p class="pm-pub-note">
-Authors after Friday W are taken from the preprint; check them against the published version.
-</p>
+<div class="pm-links">
+<p><span class="pm-badge">Open access</span> <a href="https://doi.org/10.3390/antibiotics15030239">doi:10.3390/antibiotics15030239</a></p>
 </div>
 </div>
-<div class="pm-pub" data-index="5" data-categories="UmFiaWVzJTJDT25lJTIwSGVhbHRoJTJDU3VydmVpbGxhbmNl">
-<div class="pm-pub-year listing-year">
-2026
 </div>
+<div class="pm-pub" data-index="5">
+<a class="pm-thumb" href="https://doi.org/10.1186/s42522-025-00193-1" aria-hidden="true" tabindex="-1"> <img src="https://media.springernature.com/w300/springer-static/cover-hires/journal/42522" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"> <span class="pm-tile"><span>One Health Outlook</span><b>2026</b></span> </a>
 <div class="pm-pub-body">
 <h3 class="listing-title anchored">
 <a href="https://doi.org/10.1186/s42522-025-00193-1">Challenges and potential opportunities for improving One Health surveillance in low-resource settings: Insights from rabies surveillance in Malawi</a>
 </h3>
-<p class="pm-pub-authors listing-authors">
-<strong>Mastala PI</strong>, Kalonde PK, Chikhola E, Burdon Bailey J, Nkhoma J, Lohr F, Hiwa T, Phiri B, Wood C, Kapalamula TF, Bickton F, Chiepa B, Jørgensen HJ, Mazeri S, Musaya J
+<p class="pm-authors">
+<strong>Mastala PI</strong>, Kalonde PK, Chikhola E, Bailey JB, Nkhoma J, Lohr F, Hiwa T, Phiri B, Wood C, Kapalamula TF, Bickton F, Chiepa B, Jørgensen HJ, Mazeri S, Musaya J
 </p>
-<p class="pm-pub-venue listing-journal">
-<em>One Health Outlook</em>, 8: 5
+<p class="pm-venue">
+<em>One Health Outlook</em> 8: 5 (2026)
 </p>
-<div class="pm-pub-links">
-<p><span class="pm-badge status">Published</span> <span class="pm-badge oa">Open access</span> <a href="https://doi.org/10.1186/s42522-025-00193-1">doi:10.1186/s42522-025-00193-1</a></p>
+<div class="pm-links">
+<p><span class="pm-badge">Open access</span> <a href="https://doi.org/10.1186/s42522-025-00193-1">doi:10.1186/s42522-025-00193-1</a></p>
 </div>
 </div>
 </div>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
+<div class="listing-no-matching d-none">
+No matching items
 </div>
+</div>
+</section>
+<section id="under-review" class="level2 unnumbered unlisted">
+<h2 class="unnumbered unlisted anchored" data-anchor-id="under-review">Under review</h2>
+<div id="listing-review" class="quarto-listing quarto-listing-container-custom">
+<!--
+Publication list with automatic cover thumbnails.
+Covers come from the DOI for BMC/Springer (10.1186/sXXXXX, 10.1007/sXXXXX)
+and MDPI (10.3390/journalVVIIAAAA) journals, or from an explicit "cover" field.
+If a cover cannot load, a navy tile with the journal name is shown instead.
+-->
+<div class="list">
+<div class="pm-pub" data-index="0">
+<div class="pm-thumb" aria-hidden="true">
+<p><span class="pm-tile"><span>PLOS Neglected Tropical Diseases</span><b>2026</b></span></p>
+</div>
+<div class="pm-pub-body">
+<h3 class="listing-title anchored">
+Beyond knowledge: Attitudes as a pathway to rabies-safe practices in urban Lilongwe, Malawi
+</h3>
+<p class="pm-authors">
+<strong>Mastala PI</strong>, Kalonde P, Chin S, Dodu L, Chikhola E, Valdez C, Nyamwanza M, Ojadare TA, Chiweta E, Chipembo A, Chimaliro L, Ngunguni S, Kamanga P, Tefera MG, Kapalamula T, Brown H
+</p>
+<p class="pm-venue">
+<em>PLOS Neglected Tropical Diseases</em> (2026)
+</p>
+<div class="pm-links">
+<p><span class="pm-badge review">Under review</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="in-preparation" class="level2 unnumbered unlisted">
+<h2 class="unnumbered unlisted anchored" data-anchor-id="in-preparation">In preparation</h2>
+<ul>
+<li>Spatiotemporal incidence and risk of potential rabies exposure from animal bites in Blantyre District, Malawi.</li>
+<li>Assessment of human rabies incidence and rabies post-exposure prophylaxis accessibility in southern Malawi.</li>
+</ul>
 
 
 
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
     }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
     }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/pmastala\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/pmastala\.github\.io");
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
     }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
     }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
         }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -615,161 +634,185 @@ Authors after Friday W are taken from the preprint; check them against the publi
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -780,13 +823,37 @@ Authors after Friday W are taken from the preprint; check them against the publi
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org">Quarto</a> · Lilongwe, Malawi</p>
-</div>
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:preciousmastala@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/precious-innocent-mastala-614235167/">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=xGpXw3gAAAAJ&amp;hl=en">
+      <i class="bi bi-mortarboard" role="img" aria-label="Google Scholar">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/pmastala">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
   </div>
 </footer>
 
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

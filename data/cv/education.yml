@@ -1,0 +1,10 @@
+# Newest first. Copy a block to add an entry.
+- when: "2024 to 2026"
+  title: "Master of Public Health, One Health"
+  org: "Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, USA"
+  note: "GPA 4.0/4.0 · Fulbright Foreign Student Program Scholar · Outstanding MPH Student"
+
+- when: "2014 to 2021"
+  title: "Bachelor of Veterinary Medicine (BVM)"
+  org: "Lilongwe University of Agriculture and Natural Resources (LUANAR), Malawi"
+  note: "GPA 3.6/4.0 · Distinction"

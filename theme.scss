@@ -1,50 +1,40 @@
 /*-- scss:defaults --*/
 
-// ---------------------------------------------------------------
-// Brand palette. Change a colour here and the whole site follows.
-// ---------------------------------------------------------------
-$pm-navy:   #1A2240;   // header, bands, headings
-$pm-orange: #FF8C00;   // primary actions (navy text on top)
-$pm-green:  #1B6E50;   // status and date tags, links
-$pm-cyan:   #53BFD2;   // decorative rules and accents
-$pm-ink:    #333333;   // body text
-$pm-muted:  #5A5F6E;   // secondary text
-$pm-mist:   #F3F5F8;   // light section background
-$pm-line:   #E2E3E8;   // borders
+// Colours. Change one here and the whole site follows.
+$pm-navy:  #1A2240;   // headings, name, navbar text
+$pm-green: #1B6E50;   // links and small labels
+$pm-ink:   #2B2F38;   // body text
+$pm-muted: #5A5F6E;   // secondary text (dates, places)
+$pm-line:  #E4E6EB;   // thin dividers
+$pm-mist:  #F5F6F8;   // light panels
 
-// Typography
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 $font-family-sans-serif: "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 $font-size-root: 17px;
-$font-weight-base: 400;
+$line-height-base: 1.7;
 $headings-font-weight: 600;
 $headings-color: $pm-navy;
-$line-height-base: 1.7;
 
-// Bootstrap mappings
 $body-color: $pm-ink;
 $body-bg: #FFFFFF;
 $primary: $pm-navy;
-$secondary: $pm-muted;
 $link-color: $pm-green;
 $link-hover-color: $pm-navy;
 
-$navbar-bg: $pm-navy;
-$navbar-fg: #FFFFFF;
-$navbar-hl: $pm-cyan;
+$navbar-bg: #FFFFFF;
+$navbar-fg: $pm-navy;
+$navbar-hl: $pm-green;
 
-$footer-bg: $pm-navy;
-$footer-fg: #C9CEDD;
+$footer-bg: #FFFFFF;
+$footer-fg: $pm-muted;
 
 /*-- scss:rules --*/
 
 :root {
   --pm-navy: #{$pm-navy};
-  --pm-orange: #{$pm-orange};
   --pm-green: #{$pm-green};
-  --pm-cyan: #{$pm-cyan};
   --pm-ink: #{$pm-ink};
   --pm-muted: #{$pm-muted};
-  --pm-mist: #{$pm-mist};
   --pm-line: #{$pm-line};
+  --pm-mist: #{$pm-mist};
 }

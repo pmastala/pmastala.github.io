@@ -1,0 +1,82 @@
+---
+title: "Curriculum vitae"
+description: "Curriculum vitae of Precious Innocent Mastala: education, experience, awards, presentations and training."
+listing:
+  - id: education
+    contents: data/cv/education.yml
+    template: _templates/cv.ejs
+    sort: false
+  - id: experience
+    contents: data/cv/experience.yml
+    template: _templates/cv.ejs
+    sort: false
+  - id: awards
+    contents: data/cv/awards.yml
+    template: _templates/cv.ejs
+    sort: false
+  - id: presentations
+    contents: data/cv/presentations.yml
+    template: _templates/cv.ejs
+    sort: false
+  - id: service
+    contents: data/cv/service.yml
+    template: _templates/cv.ejs
+    sort: false
+  - id: training
+    contents: data/cv/training.yml
+    template: _templates/cv.ejs
+    sort: false
+---
+
+[Download PDF](files/Mastala_CV.pdf){.pm-btn}
+
+## Education {.unnumbered .unlisted}
+::: {#education}
+:::
+
+## Experience {.unnumbered .unlisted}
+::: {#experience}
+:::
+
+## Honours and awards {.unnumbered .unlisted}
+::: {#awards}
+:::
+
+## Presentations {.unnumbered .unlisted}
+::: {#presentations}
+:::
+
+## Service and engagement {.unnumbered .unlisted}
+::: {#service}
+:::
+
+## Training and certificates {.unnumbered .unlisted}
+::: {#training}
+:::
+
+## Skills {.unnumbered .unlisted}
+
+::: pm-skills
+Epidemiology and data analysis
+: R, statistical analysis, data management and visualisation
+
+GIS and spatial epidemiology
+: QGIS, ArcGIS Pro, SaTScan, Google Earth Engine, risk mapping
+
+Surveillance and public health
+: Disease and community-based surveillance, risk assessment, monitoring and evaluation, mixed methods
+
+Field and qualitative research
+: ODK, KoboToolbox, NVivo, key informant interviews, thematic analysis
+
+Laboratory and molecular methods
+: PCR, Oxford Nanopore MinION sequencing
+
+Languages
+: Chichewa (native), English (professional)
+
+Registration
+: Malawi Board of Veterinary Surgeons
+:::
+
+Publications are listed on the [Publications](publications.qmd) page.

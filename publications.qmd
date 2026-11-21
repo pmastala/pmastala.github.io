@@ -1,23 +1,31 @@
 ---
 title: "Publications"
 description: "Peer-reviewed publications by Precious Innocent Mastala."
-title-block-style: none
 listing:
-  id: pubs
-  contents: data/publications.yml
-  template: _templates/publications.ejs
-  sort: false
-  filter-ui: [title, authors, journal, year]
-  sort-ui: false
+  - id: published
+    contents: data/publications.yml
+    template: _templates/publications.ejs
+    sort: false
+  - id: review
+    contents: data/under-review.yml
+    template: _templates/publications.ejs
+    sort: false
 ---
 
-::: {.pm-pagehead .column-screen}
-::: pm-wrap
-# Publications {.unnumbered .unlisted}
 
-Peer-reviewed work, newest first. Use the search box or the topic list to filter. A complete and current record is on [ORCID](https://orcid.org/0000-0001-9135-4856) and [Google Scholar](https://scholar.google.com/citations?user=xGpXw3gAAAAJ&hl=en).
-:::
+[Newest first. Full records are on [Google Scholar](https://scholar.google.com/citations?user=xGpXw3gAAAAJ&hl=en) and [ORCID](https://orcid.org/0000-0001-9135-4856).]{.pm-page-lede style="display:block"}
+
+## Peer-reviewed {.unnumbered .unlisted}
+
+::: {#published}
 :::
 
-::: {#pubs}
+## Under review {.unnumbered .unlisted}
+
+::: {#review}
 :::
+
+## In preparation {.unnumbered .unlisted}
+
+- Spatiotemporal incidence and risk of potential rabies exposure from animal bites in Blantyre District, Malawi.
+- Assessment of human rabies incidence and rabies post-exposure prophylaxis accessibility in southern Malawi.

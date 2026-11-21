@@ -1,0 +1,8 @@
+# Manuscripts under review. When one is accepted, move its block to
+# data/publications.yml and add the journal details and DOI.
+
+- title: "Beyond knowledge: Attitudes as a pathway to rabies-safe practices in urban Lilongwe, Malawi"
+  authors: "<strong>Mastala PI</strong>, Kalonde P, Chin S, Dodu L, Chikhola E, Valdez C, Nyamwanza M, Ojadare TA, Chiweta E, Chipembo A, Chimaliro L, Ngunguni S, Kamanga P, Tefera MG, Kapalamula T, Brown H"
+  journal: "PLOS Neglected Tropical Diseases"
+  year: 2026
+  status: "Under review"

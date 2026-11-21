@@ -7,45 +7,46 @@ project:
 
 website:
   title: "Precious Innocent Mastala"
-  description: "Veterinarian and One Health epidemiologist working on rabies surveillance and infectious disease epidemiology in Malawi."
+  description: "Veterinarian and One Health epidemiologist working on neglected tropical diseases and zoonoses in Malawi."
   site-url: "https://pmastala.github.io"
   favicon: images/logo.svg
   image: images/social-card.png
   open-graph: true
   twitter-card: true
-  search:
-    location: navbar
-    type: overlay
   page-navigation: false
-  back-to-top-navigation: true
   navbar:
-    logo: images/logo.svg
-    logo-alt: "Network logo for Precious Innocent Mastala"
-    title: "P. I. Mastala"
-    collapse-below: lg
+    title: "Precious Innocent Mastala"
+    collapse-below: md
     right:
       - text: About
-        href: about.qmd
+        href: index.qmd
       - text: Research
         href: research.qmd
       - text: Publications
         href: publications.qmd
-      - text: Journey
-        href: journey.qmd
-      - text: Updates
-        href: updates.qmd
-      - text: Contact
-        href: contact.qmd
+      - text: CV
+        href: cv.qmd
   page-footer:
     left: "© 2026 Precious Innocent Mastala"
-    right: "Built with [Quarto](https://quarto.org) · Lilongwe, Malawi"
+    right:
+      - icon: envelope
+        href: mailto:preciousmastala@gmail.com
+        aria-label: Email
+      - icon: linkedin
+        href: https://www.linkedin.com/in/precious-innocent-mastala-614235167/
+        aria-label: LinkedIn
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=xGpXw3gAAAAJ&hl=en
+        aria-label: Google Scholar
+      - icon: github
+        href: https://github.com/pmastala
+        aria-label: GitHub
 
 format:
   html:
-    theme:
-      light: [cosmo, theme.scss]
+    theme: [cosmo, theme.scss]
     css: styles.css
     toc: false
-    smooth-scroll: true
+    title-block-style: none
     link-external-newwindow: true
     lang: en-GB

@@ -1,27 +1,37 @@
 <!--
-Publication list, driven by data/publications.yml.
-Fields per entry: title, authors, journal, year, volume, article,
-doi, url, open-access (true/false), status, note.
+Publication list with automatic cover thumbnails.
+Covers come from the DOI for BMC/Springer (10.1186/sXXXXX, 10.1007/sXXXXX)
+and MDPI (10.3390/journalVVIIAAAA) journals, or from an explicit "cover" field.
+If a cover cannot load, a navy tile with the journal name is shown instead.
 -->
+<%
+function coverFor(item) {
+if (item.cover) return item.cover;
+var doi = String(item.doi || '').toLowerCase();
+var m = doi.match(/^10\.(1186|1007)\/s(\d{5})/);
+if (m) return 'https://media.springernature.com/w300/springer-static/cover-hires/journal/' + m[2];
+m = doi.match(/^10\.3390\/([a-z]+)(\d{2})(\d{2})\d{4}$/);
+if (m) return 'https://mdpi-res.com/data/covers/' + m[1] + '/cover-' + m[1] + '-v' + parseInt(m[2], 10) + '-i' + parseInt(m[3], 10) + '.png';
+return null;
+}
+%>
 <div class="list">
 <% for (const item of items) { %>
+<% const cover = coverFor(item); const link = item.doi ? 'https://doi.org/' + item.doi : (item.url || null); %>
 <div class="pm-pub" <%= metadataAttrs(item) %>>
-<div class="pm-pub-year listing-year"><%= item.year || '' %></div>
+<% if (link) { %><a class="pm-thumb" href="<%- link %>" aria-hidden="true" tabindex="-1"><% } else { %><div class="pm-thumb" aria-hidden="true"><% } %>
+<% if (cover) { %><img src="<%- cover %>" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"><% } %>
+<span class="pm-tile"><span><%= item.journal %></span><b><%= item.year %></b></span>
+<% if (link) { %></a><% } else { %></div><% } %>
 <div class="pm-pub-body">
-<h3 class="listing-title">
-<% if (item.doi) { %><a href="https://doi.org/<%- item.doi %>"><%= item.title %></a><% } else { %><%= item.title %><% } %>
-</h3>
-<p class="pm-pub-authors listing-authors"><%= item.authors %></p>
-<p class="pm-pub-venue listing-journal">
-<em><%= item.journal %></em><% if (item.volume) { %>, <%= item.volume %><% } %><% if (item.article) { %>: <%= item.article %><% } %>
-</p>
-<div class="pm-pub-links">
-<% if (item.status) { %><span class="pm-badge status"><%= item.status %></span><% } %>
-<% if (item['open-access']) { %><span class="pm-badge oa">Open access</span><% } %>
+<h3 class="listing-title"><% if (link) { %><a href="<%- link %>"><%= item.title %></a><% } else { %><%= item.title %><% } %></h3>
+<p class="pm-authors"><%= item.authors %></p>
+<p class="pm-venue"><em><%= item.journal %></em><% if (item.volume) { %> <%= item.volume %><% } %><% if (item.article) { %>: <%= item.article %><% } %><% if (item.year) { %> (<%= item.year %>)<% } %></p>
+<div class="pm-links">
+<% if (item.status) { %><span class="pm-badge review"><%= item.status %></span><% } %>
+<% if (item['open-access']) { %><span class="pm-badge">Open access</span><% } %>
 <% if (item.doi) { %><a href="https://doi.org/<%- item.doi %>">doi:<%= item.doi %></a><% } %>
-<% if (item.url) { %><a href="<%- item.url %>">Full text</a><% } %>
 </div>
-<% if (item.note) { %><p class="pm-pub-note"><%= item.note %></p><% } %>
 </div>
 </div>
 <% } %>

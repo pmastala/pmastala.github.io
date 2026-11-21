@@ -1,0 +1,42 @@
+# Newest first. "points" are optional short bullets.
+- when: "Jun 2026 to present"
+  title: "Pre-PhD Research Fellow"
+  org: "Worldwide Veterinary Service, Blantyre, Malawi"
+  points:
+    - "Research on spatial, temporal and programme-level determinants of rabies persistence in southern Malawi."
+    - "Integration of vaccination, animal surveillance, human exposure and post-exposure prophylaxis data."
+    - "Protocol development, partner coordination, grant administration and reporting."
+
+- when: "May 2025 to Aug 2025"
+  title: "One Health (Rabies) Intern"
+  org: "Pima County Health Department, Epidemiology Division, Tucson, USA"
+  points:
+    - "Analysed rabies exposure investigations, post-exposure prophylaxis use and direct medical costs."
+    - "Developed a decision-support algorithm for wildlife exposure assessment, sample submission and reporting."
+
+- when: "Oct 2022 to May 2024"
+  title: "Pre-Masters Research Trainee"
+  org: "Malawi-Liverpool-Wellcome Research Programme, Blantyre, Malawi"
+  points:
+    - "Research on human rabies incidence, post-exposure prophylaxis access and surveillance systems in southern Malawi."
+    - "Identified gaps in data capture, standardisation and sharing across human and animal health surveillance."
+
+- when: "Dec 2021 to Sep 2022"
+  title: "Junior Veterinarian"
+  org: "Lilongwe Society for the Protection and Care of Animals (LSPCA), Malawi"
+  points:
+    - "Clinical veterinary care; research on dog population estimation and rabies education in urban Lilongwe."
+    - "Led collaboration with the Ministry of Education and trained 45 teachers in rabies education delivery."
+
+- when: "Oct 2021 to Jun 2022"
+  title: "Southern Africa Promotions and Language Expansion Intern"
+  org: "One Health Lessons (remote)"
+  points:
+    - "Built partnerships to expand One Health education across southern Africa and delivered R training."
+
+- when: "Jan 2020 to Nov 2021"
+  title: "Veterinary Intern"
+  org: "LSPCA, Lilongwe, Malawi"
+  points:
+    - "Designed, implemented and evaluated a community-based rabies surveillance programme that increased case detection five-fold."
+    - "Coordinated veterinary, public health, community and laboratory stakeholders for case investigation."

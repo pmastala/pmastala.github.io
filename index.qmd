@@ -1,104 +1,71 @@
 ---
-title: "Precious Innocent Mastala"
-pagetitle: "Precious Innocent Mastala | One Health Epidemiologist"
-description: "Veterinarian and One Health epidemiologist working on rabies surveillance and infectious disease epidemiology in Malawi."
+title: "About"
+pagetitle: "Precious Innocent Mastala | Veterinarian and One Health Epidemiologist"
+description: "Veterinarian and One Health epidemiologist working on neglected tropical diseases and zoonoses in Malawi."
 page-layout: full
-title-block-banner: false
-title-block-style: none
-listing:
-  - id: highlights
-    contents: projects
-    template: _templates/project-cards.ejs
-    include:
-      featured: true
-    sort: "order"
-    max-items: 3
-  - id: latest
-    contents: posts
-    template: _templates/post-cards.ejs
-    sort: "date desc"
-    max-items: 3
-    date-format: "D MMM YYYY"
 ---
 
-<!-- ============ HERO ============ -->
-::: {.pm-hero .column-screen}
-::: pm-hero-inner
+::: pm-home
 
+:::: pm-profile
 ![](images/headshot.jpg){.pm-headshot fig-alt="Portrait of Precious Innocent Mastala"}
 
-:::: pm-hero-text
-[Precious Innocent Mastala]{.pm-hero-name style="display:block"}
+[Precious Innocent Mastala]{.pm-name style="display:block"}
 
-[Veterinarian · One Health Epidemiologist]{.pm-hero-role style="display:block"}
+[Veterinarian · One Health Epidemiologist]{.pm-role style="display:block"}
 
-# Understanding disease. Strengthening surveillance. Improving health. {.pm-hero-headline .unnumbered .unlisted}
-
-[One Health research on neglected tropical diseases (NTDs) and zoonoses in Malawi since 2020, centred on surveillance sensitivity, spatial transmission dynamics and the targeting of control and elimination interventions.]{.pm-hero-intro style="display:block"}
-
-::::: pm-hero-actions
-[Explore my research](research.qmd){.pm-btn .primary}
-[Download CV](files/Mastala_CV.pdf){.pm-btn .outline}
+[Pre-PhD Research Fellow, Worldwide Veterinary Service\
+Malawi-Liverpool-Wellcome Research Programme, Blantyre]{.pm-affil style="display:block"}
 
 ```{=html}
-<div class="pm-social">
-  <a href="https://orcid.org/0000-0001-9135-4856" aria-label="ORCID profile">
+<div class="pm-icons">
+  <a href="https://orcid.org/0000-0001-9135-4856" aria-label="ORCID">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="8.2" y1="10" x2="8.2" y2="17"/><circle cx="8.2" cy="7.3" r="0.6"/><path d="M11 7.5h2.6a4.7 4.7 0 0 1 0 9.4H11z"/></svg>
   </a>
-  <a href="https://scholar.google.com/citations?user=xGpXw3gAAAAJ&amp;hl=en" aria-label="Google Scholar profile"><i class="bi bi-mortarboard" aria-hidden="true"></i></a>
-  <a href="https://www.linkedin.com/in/precious-innocent-mastala-614235167/" aria-label="LinkedIn profile"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+  <a href="https://scholar.google.com/citations?user=xGpXw3gAAAAJ&amp;hl=en" aria-label="Google Scholar"><i class="bi bi-mortarboard" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/in/precious-innocent-mastala-614235167/" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+  <a href="https://github.com/pmastala" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+</div>
+<div class="pm-contact">
+  <a href="mailto:preciousmastala@gmail.com">preciousmastala@gmail.com</a><br>
+  <a href="tel:+265882472426">+265 882 472 426</a>
 </div>
 ```
+::::
+
+:::: pm-bio
+Veterinarian and One Health epidemiologist working on neglected tropical diseases (NTDs) and zoonoses in Malawi since 2020. Research interests centre on surveillance sensitivity, spatial transmission dynamics and the targeting of control and elimination interventions. Current work examines canine rabies persistence and surveillance gaps, with further research experience in schistosomiasis and trypanosomiasis. Experience spans clinical veterinary practice, NTD awareness, community-based surveillance design, spatial analysis in R and GIS, and linkage of fragmented human and animal health records, with government, NGO and academic partners.
+
+I welcome collaboration on One Health surveillance, rabies and other zoonoses, and infectious disease epidemiology in resource-limited settings.
+
+::::: pm-cols
+:::::: {}
+## Interests {.unnumbered .unlisted}
+
+- Zoonoses and neglected tropical diseases
+- Disease surveillance and health systems
+- Spatial and spatiotemporal epidemiology
+- Infectious disease modelling
+- Genomic and molecular epidemiology
+- Antimicrobial resistance
+::::::
+
+:::::: {}
+## Education {.unnumbered .unlisted}
+
+::: pm-edu
+**MPH, One Health**, 2026
+[University of Arizona, USA · Fulbright Scholar]{}
+:::
+
+::: pm-edu
+**Bachelor of Veterinary Medicine**, 2021
+[Lilongwe University of Agriculture and Natural Resources, Malawi · Distinction]{}
+:::
+
+[Full CV](cv.qmd){.pm-btn}
+::::::
 :::::
 ::::
-:::
-:::
 
-<!-- ============ RESEARCH HIGHLIGHTS ============ -->
-::: {.pm-band .column-screen}
-::: pm-wrap
-::: pm-title
-## Research highlights {.unnumbered .unlisted}
-:::
-
-[Selected projects in rabies surveillance and One Health epidemiology in Malawi.]{.pm-lede style="display:block"}
-
-::: {#highlights}
-:::
-
-::: pm-center
-[All projects](research.qmd){.pm-btn .green}
-:::
-:::
-:::
-
-<!-- ============ LATEST ============ -->
-::: {.pm-band .navy .column-screen}
-::: pm-wrap
-::: pm-title
-## Latest {.unnumbered .unlisted}
-:::
-
-[New publications, presentations and notes from the field.]{.pm-lede style="display:block"}
-
-::: {#latest}
-:::
-
-::: pm-center
-[All updates](updates.qmd){.pm-btn .primary}
-:::
-:::
-:::
-
-<!-- ============ CONTACT STRIP ============ -->
-::: {.pm-band .mist .column-screen}
-::: {.pm-wrap .pm-cta}
-:::: {}
-## Let's work together {.unnumbered .unlisted}
-
-I welcome collaborations in One Health, infectious disease epidemiology and surveillance, particularly work that strengthens health systems in resource-limited settings.
-::::
-
-[Get in touch](contact.qmd){.pm-btn .primary}
-:::
 :::
