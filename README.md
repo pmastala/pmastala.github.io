@@ -25,7 +25,7 @@ The site updates about a minute later. Press Cmd + Shift + R in the browser to s
 | Headshot | replace `images/headshot.jpg` (square, about 640 × 640 px) |
 | Menu and footer links | `_quarto.yml` |
 | Colours and fonts | `theme.scss` |
-| Layout | `styles.css` |
+| Layout | `theme.scss` (bottom half) |
 
 ### Add a publication
 

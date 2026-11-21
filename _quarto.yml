@@ -30,7 +30,6 @@ website:
 format:
   html:
     theme: [cosmo, theme.scss]
-    css: styles.css
     toc: false
     title-block-style: none
     link-external-newwindow: true
