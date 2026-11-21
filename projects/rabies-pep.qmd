@@ -1,0 +1,42 @@
+---
+title: "Rabies PEP and Human Exposures"
+description: "Exposure surveillance, access to post-exposure prophylaxis, and the links between animal and human health systems."
+image: ../images/projects/rabies-pep.jpg
+image-alt: "Placeholder for a community or clinic photo"
+status: "[Status]"          # set to Published, Ongoing, Proposed or Completed
+focus: "One Health · Access to care"
+categories: ["[Status]", Rabies]
+featured: true
+order: 3
+---
+
+::: pm-status-line
+[[Status]]{} [One Health]{.focus} [Access to care]{.focus}
+:::
+
+![](../images/projects/rabies-pep.jpg){fig-alt="Placeholder for a community or clinic photo"}
+
+## Overview
+
+Research on rabies exposure surveillance, access to post-exposure prophylaxis (PEP), and the links between animal and human health systems.
+
+## Research questions
+
+- [Research question 1]
+- [Research question 2]
+
+## Approach
+
+[Summarise the study design and data sources.]
+
+## Outputs
+
+[Add publications, presentations or reports, or note that this work is ongoing.]
+
+## Related publication
+
+**Mastala PI**, Kalonde PK, Chikhola E, et al. Challenges and potential opportunities for improving One Health surveillance in low-resource settings: Insights from rabies surveillance in Malawi. *One Health Outlook*. 2026;8:5. [doi:10.1186/s42522-025-00193-1](https://doi.org/10.1186/s42522-025-00193-1)
+
+## Collaborators
+
+[List collaborating institutions.]

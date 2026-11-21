@@ -1,0 +1,25 @@
+<!--
+Update cards: image, date tag, category, title, summary.
+Each post's front matter supplies: title, date, categories,
+description, image, image-alt.
+-->
+<div class="pm-grid list">
+<% for (const item of items) { %>
+<div class="pm-card" <%= metadataAttrs(item) %>>
+<div class="pm-card-img">
+<% if (item.image) { %>
+<img src="<%- item.image %>" alt="<%= item['image-alt'] || '' %>" loading="lazy">
+<% } %>
+<% if (item.date) { %><span class="pm-tag listing-date"><%= item.date %></span><% } %>
+</div>
+<div class="pm-card-body">
+<% if (item.categories && item.categories.length) { %>
+<span class="pm-card-meta"><%= item.categories.join(' · ') %></span>
+<% } %>
+<h3 class="listing-title"><%= item.title %></h3>
+<% if (item.description) { %><p class="listing-description"><%= item.description %></p><% } %>
+<a class="pm-more stretched-link" href="<%- item.path %>">Read more ›</a>
+</div>
+</div>
+<% } %>
+</div>

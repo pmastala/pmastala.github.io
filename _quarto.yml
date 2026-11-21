@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: docs          # GitHub Pages serves from /docs on the main branch
+  resources:
+    - files/
+    - .nojekyll
+
+website:
+  title: "Precious Innocent Mastala"
+  description: "Veterinarian and One Health epidemiologist working on rabies surveillance and infectious disease epidemiology in Malawi."
+  site-url: "https://pmastala.github.io"
+  favicon: images/logo.svg
+  image: images/social-card.png
+  open-graph: true
+  twitter-card: true
+  search:
+    location: navbar
+    type: overlay
+  page-navigation: false
+  back-to-top-navigation: true
+  navbar:
+    logo: images/logo.svg
+    logo-alt: "Network logo for Precious Innocent Mastala"
+    title: "P. I. Mastala"
+    collapse-below: lg
+    right:
+      - text: About
+        href: about.qmd
+      - text: Research
+        href: research.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: Journey
+        href: journey.qmd
+      - text: Updates
+        href: updates.qmd
+      - text: Contact
+        href: contact.qmd
+  page-footer:
+    left: "© 2026 Precious Innocent Mastala"
+    right: "Built with [Quarto](https://quarto.org) · Lilongwe, Malawi"
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    lang: en-GB

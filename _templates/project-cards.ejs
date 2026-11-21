@@ -1,0 +1,22 @@
+<!--
+Project cards: image, status tag, title, short description.
+Each project's front matter supplies: title, description, image,
+image-alt, status (Published / Ongoing / Proposed / Completed).
+-->
+<div class="pm-grid list">
+<% for (const item of items) { %>
+<div class="pm-card" <%= metadataAttrs(item) %>>
+<div class="pm-card-img">
+<% if (item.image) { %>
+<img src="<%- item.image %>" alt="<%= item['image-alt'] || '' %>" loading="lazy">
+<% } %>
+<% if (item.status) { %><span class="pm-tag"><%= item.status %></span><% } %>
+</div>
+<div class="pm-card-body">
+<h3 class="listing-title"><%= item.title %></h3>
+<% if (item.description) { %><p class="listing-description"><%= item.description %></p><% } %>
+<a class="pm-more stretched-link" href="<%- item.path %>">Read more ›</a>
+</div>
+</div>
+<% } %>
+</div>

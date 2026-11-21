@@ -1,0 +1,37 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/projects/rabies-persistence.html",
+      "/projects/rabies-surveillance-lilongwe.html",
+      "/projects/rabies-pep.html",
+      "/posts/2026-11-03-website-launch/index.html",
+      "/posts/2026-10-28-bmc-public-health/index.html"
+    ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/research.html",
+    "items": [
+      "/projects/rabies-persistence.html",
+      "/projects/rabies-surveillance-lilongwe.html",
+      "/projects/rabies-pep.html",
+      "/projects/mosquito-arizona.html",
+      "/projects/amr-one-health.html"
+    ]
+  },
+  {
+    "listing": "/journey.html",
+    "items": []
+  },
+  {
+    "listing": "/updates.html",
+    "items": [
+      "/posts/2026-11-03-website-launch/index.html",
+      "/posts/2026-10-28-bmc-public-health/index.html"
+    ]
+  }
+]

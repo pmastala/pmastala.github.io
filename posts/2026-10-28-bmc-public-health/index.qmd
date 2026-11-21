@@ -1,0 +1,16 @@
+---
+title: "New paper in BMC Public Health on rabies surveillance in Lilongwe"
+description: "Our comparative evaluation of participatory and passive rabies surveillance in urban Lilongwe is now published."
+date: 2026-10-28
+categories: [Publication, Rabies]
+image: ../../images/posts/bmc-public-health-2026.jpg
+image-alt: "Placeholder image for the BMC Public Health publication"
+---
+
+Our paper, *Where are rabies cases lost along the surveillance pathway? A comparative evaluation of participatory and passive rabies surveillance in urban Lilongwe, Malawi*, has been published in **BMC Public Health**. It is open access.
+
+[Add two or three sentences on what the study found and why it matters.]
+
+**Read the paper:** [doi:10.1186/s12889-026-30160-y](https://doi.org/10.1186/s12889-026-30160-y)
+
+See the [project page](../../projects/rabies-surveillance-lilongwe.qmd) for more on this work.

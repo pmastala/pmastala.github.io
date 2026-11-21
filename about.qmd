@@ -1,0 +1,68 @@
+---
+title: "About"
+description: "Current position, research interests and education of Precious Innocent Mastala."
+title-block-style: none
+page-layout: full
+---
+
+::: {.pm-pagehead .column-screen}
+::: pm-wrap
+# About me {.unnumbered .unlisted}
+
+Veterinarian and One Health epidemiologist based in Lilongwe, Malawi.
+:::
+:::
+
+::: {.pm-about .column-page}
+:::: pm-about-main
+
+[Veterinarian and One Health epidemiologist working on neglected tropical diseases (NTDs) and zoonoses in Malawi since 2020. Research interests centre on surveillance sensitivity, spatial transmission dynamics and the targeting of control and elimination interventions. Current work examines canine rabies persistence and surveillance gaps, with further research experience in schistosomiasis and trypanosomiasis. Experience spans clinical veterinary practice, NTD awareness, community-based surveillance design, spatial analysis in R and GIS, and linkage of fragmented human and animal health records, with government, NGO and academic partners.]{.pm-about-lead style="display:block"}
+
+## Current position
+
+Pre-PhD Research Fellow, Worldwide Veterinary Service, hosted at the Malawi-Liverpool-Wellcome Programme, in collaboration with Kamuzu University of Health Sciences and the University of Edinburgh.
+
+## Research interests
+
+::: pm-cols
+- One Health and zoonotic diseases
+- Infectious disease epidemiology
+- Rabies transmission, surveillance and control
+- Spatial and spatiotemporal epidemiology
+- Genomic epidemiology and phylogeography
+- Mathematical modelling of infectious diseases
+- Disease surveillance and health systems
+- Antimicrobial resistance
+- Data science and epidemiological modelling
+- Evidence-informed public health policy
+:::
+
+::: pm-photo-grid
+![[Caption: fieldwork]](images/gallery/fieldwork.jpg){fig-alt="Placeholder for a fieldwork photo"}
+
+![[Caption: dog vaccination campaign]](images/gallery/vaccination-campaign.jpg){fig-alt="Placeholder for a dog vaccination campaign photo"}
+
+![[Caption: conference or team photo]](images/gallery/team.jpg){fig-alt="Placeholder for a conference or team photo"}
+:::
+
+::::
+
+:::: pm-about-side
+
+### Education
+
+**Master of Public Health, One Health**\
+University of Arizona, USA, [Year]\
+Fulbright Foreign Student Program Scholar
+
+**Bachelor of Veterinary Medicine**\
+Lilongwe University of Agriculture and Natural Resources, Malawi, [Year]
+
+### Profiles
+
+[ORCID](https://orcid.org/0000-0001-9135-4856) · [Google Scholar](https://scholar.google.com/citations?user=xGpXw3gAAAAJ&hl=en) · [LinkedIn](https://www.linkedin.com/in/precious-innocent-mastala-614235167/)
+
+[Download CV](files/Mastala_CV.pdf){.pm-btn .primary}
+
+::::
+:::

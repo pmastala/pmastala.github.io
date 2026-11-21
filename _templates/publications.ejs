@@ -1,0 +1,28 @@
+<!--
+Publication list, driven by data/publications.yml.
+Fields per entry: title, authors, journal, year, volume, article,
+doi, url, open-access (true/false), status, note.
+-->
+<div class="list">
+<% for (const item of items) { %>
+<div class="pm-pub" <%= metadataAttrs(item) %>>
+<div class="pm-pub-year listing-year"><%= item.year || '' %></div>
+<div class="pm-pub-body">
+<h3 class="listing-title">
+<% if (item.doi) { %><a href="https://doi.org/<%- item.doi %>"><%= item.title %></a><% } else { %><%= item.title %><% } %>
+</h3>
+<p class="pm-pub-authors listing-authors"><%= item.authors %></p>
+<p class="pm-pub-venue listing-journal">
+<em><%= item.journal %></em><% if (item.volume) { %>, <%= item.volume %><% } %><% if (item.article) { %>: <%= item.article %><% } %>
+</p>
+<div class="pm-pub-links">
+<% if (item.status) { %><span class="pm-badge status"><%= item.status %></span><% } %>
+<% if (item['open-access']) { %><span class="pm-badge oa">Open access</span><% } %>
+<% if (item.doi) { %><a href="https://doi.org/<%- item.doi %>">doi:<%= item.doi %></a><% } %>
+<% if (item.url) { %><a href="<%- item.url %>">Full text</a><% } %>
+</div>
+<% if (item.note) { %><p class="pm-pub-note"><%= item.note %></p><% } %>
+</div>
+</div>
+<% } %>
+</div>

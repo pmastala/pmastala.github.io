@@ -1,0 +1,45 @@
+# ------------------------------------------------------------------
+# CAREER JOURNEY
+# One block per milestone, newest first. Copy a block to add one.
+#
+# Fields
+#   title         milestone name
+#   when          date text exactly as you want it shown (e.g. "2024 to present")
+#   organisation  institution or programme, optional
+#   description   one to three sentences
+#   image         optional photo path, e.g. images/journey/fulbright.jpg
+#   image-alt     description of the photo for screen readers
+#   link          optional URL, link-text optional label
+#   current       true for an ongoing role (orange marker)
+# ------------------------------------------------------------------
+
+- title: "Pre-PhD Research Fellowship"
+  when: "[Year] to present"
+  organisation: "Worldwide Veterinary Service, hosted at the Malawi-Liverpool-Wellcome Programme"
+  description: "Research on the spatiotemporal drivers of rabies persistence in Southern Malawi, in collaboration with Kamuzu University of Health Sciences and the University of Edinburgh."
+  current: true
+
+- title: "Master of Public Health, One Health"
+  when: "[Year]"
+  organisation: "University of Arizona, USA · Fulbright Foreign Student Program"
+  description: "Completed the MPH as a Fulbright Scholar, receiving the Outstanding MPH Graduate Award. [Add a sentence on your MPH research or practicum.]"
+
+- title: "Public health epidemiology, Arizona"
+  when: "[Year]"
+  organisation: "[Organisation]"
+  description: "[Describe your public health epidemiology work in Arizona.]"
+
+- title: "Pre-Masters Research Fellowship"
+  when: "[Year]"
+  organisation: "Malawi-Liverpool-Wellcome Programme"
+  description: "[Describe the focus of your fellowship research.]"
+
+- title: "Veterinary clinical and animal welfare work"
+  when: "[Years]"
+  organisation: "[Organisation]"
+  description: "[Describe your clinical and animal welfare experience.]"
+
+- title: "Bachelor of Veterinary Medicine"
+  when: "[Year]"
+  organisation: "Lilongwe University of Agriculture and Natural Resources (LUANAR), Malawi"
+  description: "[Add a sentence on your veterinary training and what drew you to public health.]"

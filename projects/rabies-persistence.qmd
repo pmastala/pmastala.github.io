@@ -1,0 +1,42 @@
+---
+title: "Rabies Persistence in Southern Malawi"
+description: "Spatiotemporal drivers of rabies persistence despite repeated mass dog vaccination, integrating vaccination, surveillance, human exposure and genomic data."
+image: ../images/projects/rabies-persistence.jpg
+image-alt: "Placeholder for a map or fieldwork photo from Southern Malawi"
+status: "Ongoing"
+focus: "Spatiotemporal epidemiology · Genomic epidemiology"
+categories: [Ongoing, Rabies]
+featured: true
+order: 1
+---
+
+::: pm-status-line
+[Ongoing]{} [Spatiotemporal epidemiology]{.focus} [Genomic epidemiology]{.focus}
+:::
+
+![](../images/projects/rabies-persistence.jpg){fig-alt="Placeholder for a map or fieldwork photo from Southern Malawi"}
+
+## Overview
+
+Rabies continues to circulate in parts of Southern Malawi despite repeated mass dog vaccination. This research investigates the spatiotemporal drivers of that persistence by integrating dog vaccination, animal surveillance, human exposure and genomic data.
+
+## Research questions
+
+- [Research question 1]
+- [Research question 2]
+- [Research question 3]
+
+## Approach
+
+[Summarise the study design, data sources and analytical approach in two or three sentences.]
+
+## Outputs
+
+::: callout-note
+## Work in progress
+Findings will be posted here as they are published.
+:::
+
+## Collaborators
+
+[List collaborating institutions and supervisors.]

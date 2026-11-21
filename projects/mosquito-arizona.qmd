@@ -1,0 +1,38 @@
+---
+title: "Mosquito Epidemiology in Arizona"
+description: "Associations between urbanisation, environmental conditions and the spatiotemporal abundance of important mosquito vectors."
+image: ../images/projects/mosquito-arizona.jpg
+image-alt: "Placeholder for a vector surveillance photo or map from Arizona"
+status: "[Status]"          # set to Published, Ongoing, Proposed or Completed
+focus: "Vector ecology · Spatial epidemiology"
+categories: ["[Status]", Vector-borne disease]
+featured: false
+order: 4
+---
+
+::: pm-status-line
+[[Status]]{} [Vector ecology]{.focus} [Spatial epidemiology]{.focus}
+:::
+
+![](../images/projects/mosquito-arizona.jpg){fig-alt="Placeholder for a vector surveillance photo or map from Arizona"}
+
+## Overview
+
+Research investigating associations between urbanisation, environmental conditions and the spatiotemporal abundance of important mosquito vectors in Arizona.
+
+## Research questions
+
+- [Research question 1]
+- [Research question 2]
+
+## Approach
+
+[Summarise data sources, study area and analytical approach.]
+
+## Outputs
+
+[Add the thesis, poster, presentation or paper that came from this work.]
+
+## Collaborators
+
+[List collaborating institutions and mentors.]

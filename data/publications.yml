@@ -1,0 +1,85 @@
+# ------------------------------------------------------------------
+# PUBLICATIONS
+# Add a new paper by copying one block (from "- title:" down) to the
+# top of this list and editing it. Newest first. Render the site to
+# see the change. Your own name is wrapped in <strong> to bold it.
+#
+# Fields
+#   title        article title
+#   authors      author list (HTML allowed for <strong>)
+#   journal      journal name
+#   year         publication year
+#   volume       volume (and issue), optional
+#   article      article number or pages, optional
+#   doi          DOI without the https://doi.org/ prefix
+#   url          optional extra link (PDF, repository copy)
+#   open-access  true or false
+#   status       Published, Online first, In press, Under review, Preprint
+#   note         optional short note shown in italics
+# ------------------------------------------------------------------
+
+- title: "Where are rabies cases lost along the surveillance pathway? A comparative evaluation of participatory and passive rabies surveillance in urban Lilongwe, Malawi"
+  authors: "<strong>Mastala PI</strong>, Kalonde PK, Chiweta E, Razemba T, Nyamwanza M, Chimbalanga G, Phiri KM, Lambulira D, Dzimbiri P, Kamanga L, Msowoya M, Tefera M, Kapalamula TF"
+  journal: "BMC Public Health"
+  year: 2026
+  doi: "10.1186/s12889-026-30160-y"
+  open-access: true
+  status: "Online first"
+  categories: [Rabies, Surveillance]
+
+- title: "Phenotypic Antimicrobial Resistance Patterns in E. coli, Salmonella, and Enterobacter Species Isolated from Broiler Chicken Meat in Mzimba, Malawi: Insights from the Multiple Antibiotic Resistance Index"
+  authors: "Chipembo AC, Kalumbi MH, Kamara A, Koroma NF, Iragena ML, Chikosa K, Maimu M, Zulu GE, <strong>Mastala PI</strong>, [remaining authors], Bila NM"
+  journal: "Antibiotics"
+  year: 2026
+  volume: "15(10)"
+  article: "1028"
+  doi: "10.3390/antibiotics15101028"
+  open-access: true
+  status: "Published"
+  categories: [Antimicrobial resistance]
+  note: "Complete the author list from the journal page."
+
+- title: "Prevalence of ESBL-associated resistance genes and antimicrobial resistance in Escherichia coli from pigs and cattle slaughtered at urban abattoirs in Lilongwe District, Malawi"
+  authors: "Nkhoma C, Chikwana N, <strong>Mastala PI</strong>, Kapalamula T"
+  journal: "Frontiers in Veterinary Science"
+  year: 2026
+  volume: "13"
+  article: "1886903"
+  doi: "10.3389/fvets.2026.1886903"
+  open-access: true
+  status: "Published"
+  categories: [Antimicrobial resistance]
+
+- title: "Does plastic waste present an infection hazard? Current evidence, surveillance challenges and research priorities"
+  authors: "Kalonde PK, Mkoola K, Ormsby M, Mwapasa T, <strong>Mastala PI</strong>, Mphasa M, Tonthola K, Bickton FM, Nambala P, Robertson T, Quilliam RS, Chidziwisano K, Morse T, Jones CM, Stanton MC, Atkinson PM, Henrion MYR, Feasey N"
+  journal: "One Health Outlook"
+  year: 2026
+  volume: "8"
+  article: "41"
+  doi: "10.1186/s42522-026-00237-0"
+  open-access: true
+  status: "Published"
+  categories: [One Health, Surveillance]
+
+- title: "Antimicrobial Use and Resistance: Knowledge, Attitudes, and Practices of Broiler Farmers in Mzimba, Malawi"
+  authors: "Chipembo AC, Zulu GE, <strong>Mastala PI</strong>, Mvula S, Malinki TSG, Friday W, Kalumbi M, Pondja A, Musaya J, Moiane B, Bila NM"
+  journal: "Antibiotics"
+  year: 2026
+  volume: "15(3)"
+  article: "239"
+  doi: "10.3390/antibiotics15030239"
+  open-access: true
+  status: "Published"
+  categories: [Antimicrobial resistance]
+  note: "Authors after Friday W are taken from the preprint; check them against the published version."
+
+- title: "Challenges and potential opportunities for improving One Health surveillance in low-resource settings: Insights from rabies surveillance in Malawi"
+  authors: "<strong>Mastala PI</strong>, Kalonde PK, Chikhola E, Burdon Bailey J, Nkhoma J, Lohr F, Hiwa T, Phiri B, Wood C, Kapalamula TF, Bickton F, Chiepa B, Jørgensen HJ, Mazeri S, Musaya J"
+  journal: "One Health Outlook"
+  year: 2026
+  volume: "8"
+  article: "5"
+  doi: "10.1186/s42522-025-00193-1"
+  open-access: true
+  status: "Published"
+  categories: [Rabies, One Health, Surveillance]

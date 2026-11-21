@@ -1,0 +1,23 @@
+---
+title: "Research"
+description: "One Health research on the transmission, surveillance and control of infectious diseases."
+title-block-style: none
+listing:
+  id: projects
+  contents: projects
+  template: _templates/project-cards.ejs
+  sort: "order"
+  filter-ui: true
+  sort-ui: false
+---
+
+::: {.pm-pagehead .column-screen}
+::: pm-wrap
+# Research {.unnumbered .unlisted}
+
+My work uses a One Health approach to understand how infectious diseases persist and spread across human, animal and environmental systems. I combine field surveillance, spatial analysis and linked human and animal health data, and increasingly molecular and genomic methods, to strengthen disease detection and inform control.
+:::
+:::
+
+::: {#projects}
+:::
