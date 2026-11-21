@@ -15,7 +15,7 @@ listing:
 # CV at a glance {.pm-title .unnumbered .unlisted}
 
 ::: pm-lede
-From veterinary training in Lilongwe to One Health research in Malawi and the United States.
+Key roles, qualifications and awards by year. The full CV is available as a PDF.
 
 [Download full CV (PDF)](files/Mastala_CV.pdf){.pm-btn style="margin-top:1.2rem"}
 :::
