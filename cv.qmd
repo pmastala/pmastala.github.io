@@ -8,15 +8,31 @@ listing:
   sort: false
 ---
 
+::: {.pm-band .column-screen}
+::: pm-band-inner
 [[Home](index.qmd) / CV]{.pm-crumb style="display:block"}
 
-# CV {.pm-title .unnumbered .unlisted}
+# CV at a glance {.pm-title .unnumbered .unlisted}
 
 ::: pm-lede
-An overview by year. The full CV, with every role, award, presentation and training course, is available as a PDF.
+From veterinary training in Lilongwe to One Health research in Malawi and the United States.
 
-[Download full CV (PDF)](files/Mastala_CV.pdf){.pm-btn style="margin-top:1rem"}
+[Download full CV (PDF)](files/Mastala_CV.pdf){.pm-btn style="margin-top:1.2rem"}
 :::
+:::
+:::
+
+```{=html}
+<div class="pm-legend">
+  <span><i class="bi bi-briefcase-fill"></i>Role</span>
+  <span><i class="bi bi-mortarboard-fill"></i>Education</span>
+  <span><i class="bi bi-award-fill"></i>Award</span>
+  <span><i class="bi bi-journal-text"></i>Publications</span>
+  <span><i class="bi bi-mic-fill"></i>Talks</span>
+  <span><i class="bi bi-book-fill"></i>Training</span>
+  <span><i class="bi bi-people-fill"></i>Service</span>
+</div>
+```
 
 ::: {#timeline}
 :::

@@ -1,8 +1,9 @@
 <!--
-CV overview: one row per year. Data: data/timeline.yml
+CV at a glance: one row per year, items alternate sides on wide screens.
+Data: data/timeline.yml
 -->
 <%
-var labels = { role: 'Role', education: 'Education', award: 'Award', publication: 'Publications', talk: 'Talks', training: 'Training', service: 'Service' };
+var icons = { role: 'briefcase-fill', education: 'mortarboard-fill', award: 'award-fill', publication: 'journal-text', talk: 'mic-fill', training: 'book-fill', service: 'people-fill' };
 %>
 <ol class="pm-years list">
 <% for (const item of items) { %>
@@ -10,7 +11,7 @@ var labels = { role: 'Role', education: 'Education', award: 'Award', publication
 <div class="pm-year-label"><%= item.year %></div>
 <div class="pm-year-items">
 <% for (const it of (item.items || [])) { %>
-<div class="pm-item"><span class="pm-type"><%= labels[it.type] || '' %></span><b><%= it.title %></b><% if (it.detail) { %><small><%= it.detail %></small><% } %></div>
+<div class="pm-item"><i class="pm-ico bi bi-<%= icons[it.type] || 'dot' %>" aria-hidden="true"></i><div><b><%= it.title %></b><% if (it.detail) { %><small><%= it.detail %></small><% } %></div></div>
 <% } %>
 </div>
 </li>

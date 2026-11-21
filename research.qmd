@@ -3,7 +3,8 @@ title: "Research"
 description: "One Health research on the transmission, surveillance and control of infectious diseases in Malawi and the United States."
 ---
 
-
+::: {.pm-band .column-screen}
+::: pm-band-inner
 [[Home](index.qmd) / Research]{.pm-crumb style="display:block"}
 
 # Research {.pm-title .unnumbered .unlisted}
@@ -11,9 +12,15 @@ description: "One Health research on the transmission, surveillance and control 
 ::: pm-lede
 My work uses a One Health approach to understand how infectious diseases persist and spread across human, animal and environmental systems. I combine field surveillance, spatial analysis and linked human and animal health data, and increasingly molecular and genomic methods, to strengthen disease detection and inform control.
 :::
+:::
+:::
+
+:::: pm-themes
 
 ::: pm-theme
-### Rabies persistence in southern Malawi [Ongoing]{.pm-status}
+[]{.pm-ico .bi .bi-geo-alt-fill aria-hidden="true"} [Ongoing]{.pm-status}
+
+### Rabies persistence in southern Malawi
 
 [2026 to present · Pre-PhD Research Fellowship, Worldwide Veterinary Service and Malawi-Liverpool-Wellcome Research Programme]{.pm-meta style="display:block"}
 
@@ -21,39 +28,49 @@ Why does canine rabies persist in southern Malawi despite repeated mass dog vacc
 :::
 
 ::: pm-theme
-### Community-based rabies surveillance in Lilongwe [Published]{.pm-status}
+[]{.pm-ico .bi .bi-broadcast aria-hidden="true"} [Published]{.pm-status .done}
+
+### Community-based rabies surveillance in Lilongwe
 
 [2020 to 2022 · Lilongwe Society for the Protection and Care of Animals]{.pm-meta style="display:block"}
 
 I designed, implemented and evaluated a community-based rabies surveillance programme in urban Lilongwe, which increased case detection five-fold, and compared it with passive surveillance to locate where cases are lost along the surveillance pathway. Related work examines how attitudes shape rabies-safe practices in the same communities.
 
-[Outputs: [BMC Public Health, 2026](https://doi.org/10.1186/s12889-026-30160-y) · knowledge, attitudes and practices study under review at *PLOS Neglected Tropical Diseases*]{.pm-outputs style="display:block"}
+[[BMC Public Health, 2026](https://doi.org/10.1186/s12889-026-30160-y) · attitudes and practices study under review at *PLOS Neglected Tropical Diseases*]{.pm-outputs style="display:block"}
 :::
 
 ::: pm-theme
-### Human rabies, post-exposure prophylaxis and One Health surveillance [Published]{.pm-status}
+[]{.pm-ico .bi .bi-hospital aria-hidden="true"} [Published]{.pm-status .done}
+
+### Human rabies, post-exposure prophylaxis and One Health surveillance
 
 [2022 to 2025 · Malawi-Liverpool-Wellcome Research Programme; Pima County Health Department, Arizona]{.pm-meta style="display:block"}
 
 In southern Malawi, I analysed health-facility, surveillance and vaccine stock data to estimate human rabies incidence, assess access to post-exposure prophylaxis, and identify gaps in data sharing between human and animal health systems. In Arizona, I assessed post-exposure prophylaxis use against risk-based guidance and developed a decision-support algorithm for wildlife exposures.
 
-[Outputs: [One Health Outlook, 2026](https://doi.org/10.1186/s42522-025-00193-1) · two manuscripts in preparation]{.pm-outputs style="display:block"}
+[[One Health Outlook, 2026](https://doi.org/10.1186/s42522-025-00193-1) · two manuscripts in preparation]{.pm-outputs style="display:block"}
 :::
 
 ::: pm-theme
-### Antimicrobial resistance and environmental infection risk [Published]{.pm-status}
+[]{.pm-ico .bi .bi-capsule aria-hidden="true"} [Published]{.pm-status .done}
+
+### Antimicrobial resistance and environmental infection risk
 
 [2026 · Collaborative studies in Malawi]{.pm-meta style="display:block"}
 
 Collaborative work on antimicrobial use and resistance in Malawi's poultry and livestock sectors, including resistance genes in *Escherichia coli* from abattoirs in Lilongwe, and a review of plastic waste as an infection hazard.
 
-[Outputs: [Antibiotics, 2026](https://doi.org/10.3390/antibiotics15030239) · [Antibiotics, 2026](https://doi.org/10.3390/antibiotics15101028) · [Frontiers in Veterinary Science, 2026](https://doi.org/10.3389/fvets.2026.1886903) · [One Health Outlook, 2026](https://doi.org/10.1186/s42522-026-00237-0)]{.pm-outputs style="display:block"}
+[[Antibiotics](https://doi.org/10.3390/antibiotics15030239) · [Antibiotics](https://doi.org/10.3390/antibiotics15101028) · [Frontiers in Veterinary Science](https://doi.org/10.3389/fvets.2026.1886903) · [One Health Outlook](https://doi.org/10.1186/s42522-026-00237-0)]{.pm-outputs style="display:block"}
 :::
 
 ::: pm-theme
-### Vector and wildlife ecology in Arizona [Ongoing]{.pm-status}
+[]{.pm-ico .bi .bi-bug-fill aria-hidden="true"} [Ongoing]{.pm-status}
+
+### Vector and wildlife ecology in Arizona
 
 [2025 to present · University of Arizona, research volunteer]{.pm-meta style="display:block"}
 
 Eco-epidemiological research on how urbanisation and urban greening influence West Nile virus and dengue vector ecology, including mosquito and wild bird trapping and sample collection for virus detection and genomic analysis, and a wildlife health study of pronghorn microbiome profiles.
 :::
+
+::::
