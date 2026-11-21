@@ -4,6 +4,7 @@ project:
   resources:
     - files/
     - .nojekyll
+    - googled3da9ec7a6a66718.html
 
 website:
   title: "Precious Innocent Mastala"
