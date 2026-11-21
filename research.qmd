@@ -36,7 +36,7 @@ Why does canine rabies persist in southern Malawi despite repeated mass dog vacc
 
 I designed, implemented and evaluated a community-based rabies surveillance programme in urban Lilongwe, which increased case detection five-fold, and compared it with passive surveillance to locate where cases are lost along the surveillance pathway. Related work examines how attitudes shape rabies-safe practices in the same communities.
 
-[[BMC Public Health, 2026](https://doi.org/10.1186/s12889-026-30160-y) · attitudes and practices study under review at *PLOS Neglected Tropical Diseases*]{.pm-outputs style="display:block"}
+[[BMC Public Health, 2026](https://doi.org/10.1186/s12889-026-30160-y)]{.pm-outputs style="display:block"}
 :::
 
 ::: pm-theme
@@ -48,7 +48,7 @@ I designed, implemented and evaluated a community-based rabies surveillance prog
 
 In southern Malawi, I analysed health-facility, surveillance and vaccine stock data to estimate human rabies incidence, assess access to post-exposure prophylaxis, and identify gaps in data sharing between human and animal health systems. In Arizona, I assessed post-exposure prophylaxis use against risk-based guidance and developed a decision-support algorithm for wildlife exposures.
 
-[[One Health Outlook, 2026](https://doi.org/10.1186/s42522-025-00193-1) · two manuscripts in preparation]{.pm-outputs style="display:block"}
+[[One Health Outlook, 2026](https://doi.org/10.1186/s42522-025-00193-1)]{.pm-outputs style="display:block"}
 :::
 
 ::: pm-theme

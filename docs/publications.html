@@ -98,34 +98,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-review .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-authors','listing-journal','listing-year','listing-status',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-authors","listing-journal","listing-year","listing-status"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-review'] = new List('listing-review', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -234,7 +206,7 @@ window.Quarto = {
 <h1 class="pm-title unnumbered unlisted">Publications</h1>
 <div class="pm-lede">
 <p>Peer-reviewed work, newest first. Full records are on <a href="https://scholar.google.com/citations?user=UCQd7XUAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://orcid.org/0000-0001-9135-4856">ORCID</a>.</p>
-<p><span class="pm-count" style="display:block"><span style="font-weight:700">6</span> peer-reviewed · <span style="font-weight:700">1</span> under review · <span style="font-weight:700">2</span> in preparation</span></p>
+<p><span class="pm-count" style="display:block"><span style="font-weight:700">6</span> peer-reviewed</span></p>
 </div>
 </section>
 </div>
@@ -355,50 +327,6 @@ Chipembo AC, Zulu GE, <strong>Mastala PI</strong>, Mvula S, Malinki TSG, Friday 
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div>
-</section>
-<section id="under-review" class="level2 unnumbered unlisted">
-<h2 class="unnumbered unlisted anchored" data-anchor-id="under-review">Under review</h2>
-<div id="listing-review" class="quarto-listing quarto-listing-container-custom">
-<!--
-Publication list with automatic cover thumbnails.
-Covers come from the DOI for BMC/Springer (10.1186/sXXXXX, 10.1007/sXXXXX)
-and MDPI (10.3390/journalVVIIAAAA) journals, or from an explicit "cover" field.
-If a cover cannot load, a navy tile with the journal name is shown instead.
--->
-<div class="list">
-<div class="pm-pub" data-index="0">
-<div class="pm-thumb" aria-hidden="true">
-<p><span class="pm-tile"><span>PLOS Neglected Tropical Diseases</span><b>2026</b></span></p>
-</div>
-<div class="pm-pub-body">
-<h3 class="listing-title anchored">
-Beyond knowledge: Attitudes as a pathway to rabies-safe practices in urban Lilongwe, Malawi
-</h3>
-<p class="pm-authors">
-<strong>Mastala PI</strong>, Kalonde P, Chin S, Dodu L, Chikhola E, Valdez C, Nyamwanza M, Ojadare TA, Chiweta E, Chipembo A, Chimaliro L, Ngunguni S, Kamanga P, Tefera MG, Kapalamula T, Brown H
-</p>
-<p class="pm-venue">
-<em>PLOS Neglected Tropical Diseases</em> (2026)
-</p>
-<div class="pm-links">
-<p><span class="pm-badge review">Under review</span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="in-preparation" class="level2 unnumbered unlisted">
-<h2 class="unnumbered unlisted anchored" data-anchor-id="in-preparation">In preparation</h2>
-<div class="pm-prep">
-<ul>
-<li>Spatiotemporal incidence and risk of potential rabies exposure from animal bites in Blantyre District, Malawi.</li>
-<li>Assessment of human rabies incidence and rabies post-exposure prophylaxis accessibility in southern Malawi.</li>
-</ul>
 </div>
 
 

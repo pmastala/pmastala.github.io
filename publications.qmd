@@ -6,10 +6,6 @@ listing:
     contents: data/publications.yml
     template: _templates/publications.ejs
     sort: false
-  - id: review
-    contents: data/under-review.yml
-    template: _templates/publications.ejs
-    sort: false
 ---
 
 
@@ -22,7 +18,7 @@ listing:
 ::: pm-lede
 Peer-reviewed work, newest first. Full records are on [Google Scholar](https://scholar.google.com/citations?user=UCQd7XUAAAAJ&hl=en) and [ORCID](https://orcid.org/0000-0001-9135-4856).
 
-[[6]{style="font-weight:700"} peer-reviewed · [1]{style="font-weight:700"} under review · [2]{style="font-weight:700"} in preparation]{.pm-count style="display:block"}
+[[6]{style="font-weight:700"} peer-reviewed]{.pm-count style="display:block"}
 :::
 :::
 :::
@@ -32,14 +28,3 @@ Peer-reviewed work, newest first. Full records are on [Google Scholar](https://s
 ::: {#published}
 :::
 
-## Under review {.unnumbered .unlisted}
-
-::: {#review}
-:::
-
-## In preparation {.unnumbered .unlisted}
-
-::: pm-prep
-- Spatiotemporal incidence and risk of potential rabies exposure from animal bites in Blantyre District, Malawi.
-- Assessment of human rabies incidence and rabies post-exposure prophylaxis accessibility in southern Malawi.
-:::

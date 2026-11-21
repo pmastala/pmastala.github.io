@@ -19,7 +19,7 @@ The site updates about a minute later. Press Cmd + Shift + R in the browser to s
 |---|---|
 | About page (photo, bio, collaboration note, numbers, interests, education) | `index.qmd` |
 | Research themes | `research.qmd` |
-| Publications | `data/publications.yml` (under review: `data/under-review.yml`) |
+| Publications | `data/publications.yml` |
 | CV at a glance (year-by-year timeline) | `data/timeline.yml` |
 | Downloadable CV | replace `files/Mastala_CV.pdf` (keep the name) |
 | Headshot | replace `images/headshot.jpg` (square, about 640 × 640 px) |
