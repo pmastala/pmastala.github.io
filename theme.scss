@@ -1,40 +1,35 @@
 /*-- scss:defaults --*/
 
-// Colours. Change one here and the whole site follows.
-$pm-navy:  #1A2240;   // headings, name, navbar text
-$pm-green: #1B6E50;   // links and small labels
-$pm-ink:   #2B2F38;   // body text
-$pm-muted: #5A5F6E;   // secondary text (dates, places)
-$pm-line:  #E4E6EB;   // thin dividers
-$pm-mist:  #F5F6F8;   // light panels
+// Two colours only: navy and grey. Change them here.
+$pm-navy:  #1B3A7A;   // headings, links, footer bar
+$pm-ink:   #222222;   // body text
+$pm-muted: #5F6368;   // dates, places, labels
+$pm-line:  #DADCE0;   // thin dividers
+$pm-grey:  #F4F4F4;   // footer panel
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+// Font is loaded in _quarto.yml (include-in-header).
 $font-family-sans-serif: "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 $font-size-root: 17px;
-$line-height-base: 1.7;
-$headings-font-weight: 600;
-$headings-color: $pm-navy;
+$line-height-base: 1.65;
+$headings-font-weight: 700;
+$headings-color: $pm-ink;
 
 $body-color: $pm-ink;
 $body-bg: #FFFFFF;
 $primary: $pm-navy;
-$link-color: $pm-green;
+$link-color: $pm-navy;
 $link-hover-color: $pm-navy;
 
 $navbar-bg: #FFFFFF;
-$navbar-fg: $pm-navy;
-$navbar-hl: $pm-green;
-
-$footer-bg: #FFFFFF;
-$footer-fg: $pm-muted;
+$navbar-fg: $pm-ink;
+$navbar-hl: $pm-navy;
 
 /*-- scss:rules --*/
 
 :root {
   --pm-navy: #{$pm-navy};
-  --pm-green: #{$pm-green};
   --pm-ink: #{$pm-ink};
   --pm-muted: #{$pm-muted};
   --pm-line: #{$pm-line};
-  --pm-mist: #{$pm-mist};
+  --pm-grey: #{$pm-grey};
 }

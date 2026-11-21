@@ -17,11 +17,10 @@ The site updates about a minute later. Press Cmd + Shift + R in the browser to s
 
 | To change… | Edit this |
 |---|---|
-| About page (photo, bio, interests, education) | `index.qmd` |
+| About page (photo, bio, collaboration note, numbers, interests, education) | `index.qmd` |
 | Research themes | `research.qmd` |
 | Publications | `data/publications.yml` (under review: `data/under-review.yml`) |
-| CV page entries | `data/cv/*.yml` (education, experience, awards, presentations, service, training) |
-| Skills and languages | bottom of `cv.qmd` |
+| CV at a glance (year-by-year timeline) | `data/timeline.yml` |
 | Downloadable CV | replace `files/Mastala_CV.pdf` (keep the name) |
 | Headshot | replace `images/headshot.jpg` (square, about 640 × 640 px) |
 | Menu and footer links | `_quarto.yml` |
@@ -40,6 +39,9 @@ Without a cover, a navy tile with the journal name is shown.
 `R/check_orcid.R` lists any paper on your ORCID record that is missing from the site:
 run `source("R/check_orcid.R")` in the Console.
 
-### Add a CV entry
+### Add to the CV timeline
 
-Copy a block in the right file under `data/cv/`, paste it in date order (newest first), and edit it.
+In `data/timeline.yml`, find the year (or copy a year block to the top) and add an item with a `type`
+(role, education, award, publication, talk, training or service), a short `title` and a one-line `detail`.
+
+The numbers on the About page (papers, awards, presentations) are typed in `index.qmd`; update them when they change.

@@ -26,21 +26,6 @@ website:
         href: publications.qmd
       - text: CV
         href: cv.qmd
-  page-footer:
-    left: "© 2026 Precious Innocent Mastala"
-    right:
-      - icon: envelope
-        href: mailto:preciousmastala@gmail.com
-        aria-label: Email
-      - icon: linkedin
-        href: https://www.linkedin.com/in/precious-innocent-mastala-614235167/
-        aria-label: LinkedIn
-      - icon: mortarboard
-        href: https://scholar.google.com/citations?user=xGpXw3gAAAAJ&hl=en
-        aria-label: Google Scholar
-      - icon: github
-        href: https://github.com/pmastala
-        aria-label: GitHub
 
 format:
   html:
@@ -50,3 +35,9 @@ format:
     title-block-style: none
     link-external-newwindow: true
     lang: en-GB
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    include-after-body: _footer.html

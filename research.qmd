@@ -4,10 +4,16 @@ description: "One Health research on the transmission, surveillance and control 
 ---
 
 
-[My work uses a One Health approach to understand how infectious diseases persist and spread across human, animal and environmental systems. I combine field surveillance, spatial analysis and linked human and animal health data, and increasingly molecular and genomic methods, to strengthen disease detection and inform control.]{.pm-page-lede style="display:block"}
+[[Home](index.qmd) / Research]{.pm-crumb style="display:block"}
+
+# Research {.pm-title .unnumbered .unlisted}
+
+::: pm-lede
+My work uses a One Health approach to understand how infectious diseases persist and spread across human, animal and environmental systems. I combine field surveillance, spatial analysis and linked human and animal health data, and increasingly molecular and genomic methods, to strengthen disease detection and inform control.
+:::
 
 ::: pm-theme
-### Rabies persistence in southern Malawi [Ongoing]{.pm-status .ongoing}
+### Rabies persistence in southern Malawi [Ongoing]{.pm-status}
 
 [2026 to present · Pre-PhD Research Fellowship, Worldwide Veterinary Service and Malawi-Liverpool-Wellcome Research Programme]{.pm-meta style="display:block"}
 
@@ -15,7 +21,7 @@ Why does canine rabies persist in southern Malawi despite repeated mass dog vacc
 :::
 
 ::: pm-theme
-### Community-based rabies surveillance in Lilongwe [Published]{.pm-status .published}
+### Community-based rabies surveillance in Lilongwe [Published]{.pm-status}
 
 [2020 to 2022 · Lilongwe Society for the Protection and Care of Animals]{.pm-meta style="display:block"}
 
@@ -25,7 +31,7 @@ I designed, implemented and evaluated a community-based rabies surveillance prog
 :::
 
 ::: pm-theme
-### Human rabies, post-exposure prophylaxis and One Health surveillance [Published]{.pm-status .published}
+### Human rabies, post-exposure prophylaxis and One Health surveillance [Published]{.pm-status}
 
 [2022 to 2025 · Malawi-Liverpool-Wellcome Research Programme; Pima County Health Department, Arizona]{.pm-meta style="display:block"}
 
@@ -35,7 +41,7 @@ In southern Malawi, I analysed health-facility, surveillance and vaccine stock d
 :::
 
 ::: pm-theme
-### Antimicrobial resistance and environmental infection risk [Published]{.pm-status .published}
+### Antimicrobial resistance and environmental infection risk [Published]{.pm-status}
 
 [2026 · Collaborative studies in Malawi]{.pm-meta style="display:block"}
 
@@ -45,7 +51,7 @@ Collaborative work on antimicrobial use and resistance in Malawi's poultry and l
 :::
 
 ::: pm-theme
-### Vector and wildlife ecology in Arizona [Ongoing]{.pm-status .ongoing}
+### Vector and wildlife ecology in Arizona [Ongoing]{.pm-status}
 
 [2025 to present · University of Arizona, research volunteer]{.pm-meta style="display:block"}
 
