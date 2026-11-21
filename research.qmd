@@ -10,7 +10,9 @@ description: "One Health research on the transmission, surveillance and control 
 # Research {.pm-title .unnumbered .unlisted}
 
 ::: pm-lede
-My work uses a One Health approach to understand how infectious diseases persist and spread across human, animal and environmental systems. I combine field surveillance, spatial analysis and linked human and animal health data, and increasingly molecular and genomic methods, to strengthen disease detection and inform control.
+Why do infectious diseases persist despite sustained control efforts? To what extent does perceived disease absence reflect surveillance gaps rather than genuine interruption of transmission? How can we determine where and when interventions will be most effective?
+
+These are some of the questions that drive my research.
 :::
 :::
 :::
